@@ -5,6 +5,7 @@ import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { PartnersSection } from "@/components/PartnersSection";
 import { ProductsSection } from "@/components/ProductsSection";
+import { ScrollProgressBar } from "@/components/ScrollProgressBar";
 import { TokenSection } from "@/components/TokenSection";
 import { UniverseSection } from "@/components/UniverseSection";
 
@@ -18,6 +19,7 @@ export default function HomePage() {
       </div>
 
       <Navbar />
+      <ScrollProgressBar />
       <main className="relative isolate">
         <Hero />
         <ProductsSection />

@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "./ui/Button";
 import { TrailerModal } from "./TrailerModal";
 import { Reveal } from "./Reveal";
+import { useSectionProgress } from "@/hooks/useScrollProgress";
+import { cn } from "@/lib/cn";
 
 const featurePills = [
   "AI-directed squads",
@@ -12,11 +14,15 @@ const featurePills = [
 ];
 
 export function Hero() {
+  const heroRef = useRef<HTMLElement | null>(null);
   const [open, setOpen] = useState(false);
+  const heroProgress = useSectionProgress(heroRef);
+  const heroStep = Math.min(2, Math.floor(heroProgress * 3));
 
   return (
     <section
       id="home"
+      ref={heroRef}
       className="relative isolate overflow-hidden pt-28 pb-24 sm:pb-28 md:pt-32 lg:pt-36 lg:pb-32"
     >
       <div className="pointer-events-none absolute inset-0 opacity-70">
@@ -29,18 +35,46 @@ export function Hero() {
       <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           <div className="flex flex-col gap-8">
-            <Reveal className="inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-cyan-200/80">
+            <Reveal
+              className={cn(
+                "inline-flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-cyan-200/80 transition-all",
+                heroStep >= 0 ? "drop-shadow-[0_0_16px_rgba(56,189,248,0.4)]" : ""
+              )}
+            >
               <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 shadow-[0_0_12px_rgba(56,189,248,0.7)]" />
               AI + gaming meta layer
             </Reveal>
 
             <Reveal className="space-y-4" delay={80}>
               <h1 className="font-display text-5xl font-semibold leading-[1.05] text-white sm:text-6xl md:text-6xl lg:text-7xl">
-                <span className="block text-slate-200">REDEFINE</span>
-                <span className="block bg-gradient-to-r from-cyan-300 via-fuchsia-400 to-blue-500 bg-clip-text text-transparent">
+                <span
+                  className={cn(
+                    "block text-slate-200 transition-all duration-300",
+                    heroStep >= 0
+                      ? "text-white drop-shadow-[0_6px_24px_rgba(255,255,255,0.12)]"
+                      : "text-slate-400"
+                  )}
+                >
+                  REDEFINE
+                </span>
+                <span
+                  className={cn(
+                    "block bg-gradient-to-r from-cyan-300 via-fuchsia-400 to-blue-500 bg-clip-text text-transparent transition-all duration-300",
+                    heroStep >= 1 ? "drop-shadow-[0_6px_28px_rgba(168,85,247,0.35)]" : ""
+                  )}
+                >
                   PLAY
                 </span>
-                <span className="block text-slate-100">REALITY</span>
+                <span
+                  className={cn(
+                    "block text-slate-100 transition-all duration-300",
+                    heroStep >= 2
+                      ? "text-white drop-shadow-[0_6px_24px_rgba(56,189,248,0.3)]"
+                      : "text-slate-400"
+                  )}
+                >
+                  REALITY
+                </span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
                 NovaSphere is the AI-driven metagame layer that links every
@@ -51,8 +85,20 @@ export function Hero() {
             </Reveal>
 
             <Reveal className="flex flex-wrap items-center gap-4" delay={140}>
-              <Button href="#products">Enter the Metagame</Button>
-              <Button variant="ghost" onClick={() => setOpen(true)}>
+              <Button
+                href="#products"
+                className={cn(
+                  "transition-transform",
+                  heroStep >= 1 ? "scale-[1.01] shadow-[0_10px_40px_rgba(56,189,248,0.35)]" : ""
+                )}
+              >
+                Enter the Metagame
+              </Button>
+              <Button
+                variant="ghost"
+                onClick={() => setOpen(true)}
+                className={cn(heroStep >= 1 ? "border-white/30 bg-white/10 shadow-[0_0_30px_rgba(255,255,255,0.15)]" : "")}
+              >
                 Watch Trailer
               </Button>
             </Reveal>
@@ -61,7 +107,12 @@ export function Hero() {
               {featurePills.map((item) => (
                 <span
                   key={item}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                  className={cn(
+                    "inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition-all",
+                    heroStep >= 2
+                      ? "border-white/30 bg-white/10 shadow-[0_12px_28px_rgba(168,85,247,0.2)]"
+                      : ""
+                  )}
                 >
                   <span className="h-2 w-2 rounded-full bg-cyan-300" />
                   {item}
@@ -72,7 +123,10 @@ export function Hero() {
 
           <Reveal
             delay={120}
-            className="relative h-full w-full min-h-[380px] rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl"
+            className={cn(
+              "relative h-full w-full min-h-[380px] rounded-3xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl transition-all",
+              heroStep >= 1 ? "shadow-[0_24px_70px_rgba(56,189,248,0.18)]" : ""
+            )}
           >
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-400/10 via-fuchsia-500/12 to-blue-600/10 blur-[60px]" />
             <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70">

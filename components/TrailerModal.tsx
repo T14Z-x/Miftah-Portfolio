@@ -31,7 +31,7 @@ export function TrailerModal({ open, onClose }: TrailerModalProps) {
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-cyan-200/80">
             <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 shadow-[0_0_12px_rgba(56,189,248,0.7)]" />
-            Trailer Preview
+            Portfolio Preview
           </div>
           <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-slate-800 via-slate-900 to-black">
             <div className="absolute inset-0 opacity-70">
@@ -51,9 +51,8 @@ export function TrailerModal({ open, onClose }: TrailerModalProps) {
             </div>
           </div>
           <p className="text-sm leading-relaxed text-slate-300">
-            Trailer coming soon. Experience a glimpse of the NovaSphere metagame
-            interface—adaptive AI squads, realm-shifting visuals, and the NSX
-            economy in motion.
+            Showreel coming soon. A quick look at how I translate data into
+            interactive prototypes, dashboards, and user journeys.
           </p>
         </div>
       </div>

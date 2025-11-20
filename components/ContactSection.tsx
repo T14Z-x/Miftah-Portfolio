@@ -52,13 +52,13 @@ export function ContactSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Contact"
-            title="Build with NovaSphere"
-            subtitle="Studios, builders, and communities are co-creating the next wave of play. Tell us what you want to launch and we'll help you ship it."
+            title="Work with Ashfiqun Ahmed Miftah"
+            subtitle="Whether you need a dashboard that speaks to stakeholders or a product experience ready for launch, let's translate your goals into clear insights and intuitive design."
           />
           <div className="mt-6 space-y-3 text-sm text-slate-300">
-            <p>• Integration support for SDKs and data streams.</p>
-            <p>• AI-driven squad design, rewards tuning, and realm hosting.</p>
-            <p>• Early access to NSX token utilities and governance.</p>
+            <p>• Data deep-dives, dashboards, and storytelling for decisions.</p>
+            <p>• UX audits, wireframes, and prototypes in Figma or Adobe XD.</p>
+            <p>• Research and usability testing to de-risk launches.</p>
           </div>
         </Reveal>
 

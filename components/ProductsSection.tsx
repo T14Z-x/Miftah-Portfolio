@@ -4,23 +4,23 @@ import { Reveal } from "./Reveal";
 const products = [
   {
     id: "01",
-    name: "Nexus",
-    description: "A unified hub where players sync identity, squads, and presence across every connected world.",
+    name: "Insight-Driven Strategies",
+    description: "Translate business questions into SQL and Python analyses that uncover growth levers and product opportunities.",
   },
   {
     id: "02",
-    name: "Vault",
-    description: "Rewards, assets, and cross-game inventory secured by NovaSphere's adaptive trust layer.",
+    name: "Dashboards & Data Stories",
+    description: "Build Tableau and Power BI visuals that clarify performance, KPIs, and experimentation results for teams.",
   },
   {
     id: "03",
-    name: "Aurora",
-    description: "An AI companion system that learns your playstyle, surfaces tactics, and orchestrates your crew.",
+    name: "UX Research & Prototyping",
+    description: "Plan user interviews, map journeys, and bring ideas to life in Figma and Adobe XD to validate early.",
   },
   {
     id: "04",
-    name: "Relay",
-    description: "Real-time intelligence and analytics for studios to tune experiences and economies with precision.",
+    name: "Product Experiments",
+    description: "Design and measure UX experiments, pairing data with design iterations to improve engagement and retention.",
   },
 ];
 
@@ -32,9 +32,9 @@ export function ProductsSection() {
 
       <div className="relative space-y-12">
         <SectionHeading
-          eyebrow="Products"
-          title="Interconnected modules built for play"
-          subtitle="Every NovaSphere module is designed to be composable. Use them alone, or combine them to orchestrate your own metagame."
+          eyebrow="Expertise"
+          title="Data and design services that ship outcomes"
+          subtitle="From raw data to intuitive experiences, I connect analysis and UX so teams can make confident, user-centered decisions."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">

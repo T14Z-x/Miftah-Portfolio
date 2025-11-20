@@ -3,19 +3,19 @@ import { Reveal } from "./Reveal";
 
 const realms = [
   {
-    title: "The Core Realm",
+    title: "Discover & Define",
     description:
-      "NovaSphere's memory layer. Every action, squad callout, and trade is contextualized here, ready to sync across worlds in milliseconds.",
+      "Kick off with business goals, success metrics, and user signals. We focus the right questions before writing a query or drawing a wireframe.",
   },
   {
-    title: "The Fringe Worlds",
+    title: "Analyze & Map",
     description:
-      "Frontier experiences crafted by studios and communities. Experimental modes, seasonal anomalies, and daring mechanics live here.",
+      "Dig into SQL and Python, uncover patterns, and translate findings into journeys and opportunities for better product decisions.",
   },
   {
-    title: "The Hidden Layer",
+    title: "Prototype & Validate",
     description:
-      "Encrypted AI simulations that forecast outcomes, balance rewards, and keep the universe fair, transparent, and player-aligned.",
+      "Wireframe in Figma or Adobe XD, layer in motion, and test with users. Iterate quickly with dashboards that track the impact of each design change.",
   },
 ];
 
@@ -29,18 +29,18 @@ export function UniverseSection() {
       <div className="relative grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="space-y-6">
           <SectionHeading
-            eyebrow="Universe"
-            title="Discover the NovaSphere universe"
-            subtitle="A connected metagame that is always observing, learning, and responding. Your data, moments, and squads move freely through every realm."
+            eyebrow="Process"
+            title="An approach that bridges data and design"
+            subtitle="From the first question to the final prototype, I translate insight into experiences that feel intentional and measurable."
           />
           <p className="text-base leading-relaxed text-slate-300">
-            Think of NovaSphere as a living operating system for play. AI agents
-            adapt to your crew, economies tune themselves in real time, and
-            stories bend based on your signals. Build with it, or simply step in
-            and explore—either way, the universe evolves with you.
+            I move between databases and design tools to align product teams,
+            reduce ambiguity, and keep users at the center. Each loop pairs
+            analytical rigor with storytelling so stakeholders see what matters
+            and why it works.
           </p>
           <div className="flex flex-wrap gap-3">
-            {["Persistent identities", "Context-aware AI", "Cross-realm rewards"].map(
+            {["SQL + Python", "Tableau / Power BI", "Figma / Adobe XD"].map(
               (item) => (
                 <span
                   key={item}

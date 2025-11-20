@@ -1,13 +1,6 @@
 import { Reveal } from "./Reveal";
 
-const partners = [
-  "Studio One",
-  "HyperCore Labs",
-  "Orbital Forge",
-  "SignalWorks",
-  "Pulse Interactive",
-  "Helix Arc",
-];
+const partners = ["SQL", "Python", "Tableau", "Power BI", "Figma", "Adobe XD"];
 
 function MarqueeRow({ offset }: { offset?: boolean }) {
   return (
@@ -34,10 +27,10 @@ export function PartnersSection() {
         <Reveal className="flex flex-col gap-6">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">
-              Partners
+              Tools & Platforms
             </p>
             <p className="text-sm text-slate-300">
-              Building alongside forward-looking studios and builders.
+              The stack I lean on to move from insight to experience.
             </p>
           </div>
           <div className="relative h-[68px] overflow-hidden">

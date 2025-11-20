@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="border-t border-white/10 bg-slate-950/60">
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 lg:px-8 md:flex-row md:items-center md:justify-between">
         <p className="text-sm text-slate-400">
-          © 2025 NovaSphere. All rights reserved.
+          © 2025 Ashfiqun Ahmed Miftah. All rights reserved.
         </p>
         <div className="flex items-center gap-5 text-sm text-slate-300">
           <a href="#" className="transition hover:text-white">

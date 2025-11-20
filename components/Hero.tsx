@@ -11,9 +11,9 @@ import { Card } from "./ui/card";
 import { Spotlight } from "./ui/spotlight";
 
 const featurePills = [
-  "AI-directed squads",
-  "Unified player identity",
-  "Adaptive economies",
+  "SQL & Python storytelling",
+  "Human-centered UX flows",
+  "Dashboards that drive action",
 ];
 
 export function Hero() {
@@ -45,7 +45,7 @@ export function Hero() {
               )}
             >
               <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 shadow-[0_0_12px_rgba(56,189,248,0.7)]" />
-              AI + gaming meta layer
+              Data analyst · UI/UX designer
             </Reveal>
 
             <Reveal className="space-y-4" delay={80}>
@@ -58,7 +58,7 @@ export function Hero() {
                       : "text-slate-400"
                   )}
                 >
-                  REDEFINE
+                  TRANSFORM
                 </span>
                 <span
                   className={cn(
@@ -66,7 +66,7 @@ export function Hero() {
                     heroStep >= 1 ? "drop-shadow-[0_6px_28px_rgba(168,85,247,0.35)]" : ""
                   )}
                 >
-                  PLAY
+                  DATA
                 </span>
                 <span
                   className={cn(
@@ -76,14 +76,16 @@ export function Hero() {
                       : "text-slate-400"
                   )}
                 >
-                  REALITY
+                  EXPERIENCES
                 </span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
-                NovaSphere is the AI-driven metagame layer that links every
-                world you play. Command adaptive companions, sync rewards across
-                galaxies, and step into a universe that is always learning from
-                you.
+                Data Analyst | UI/UX Designer transforming data into insights and
+                designs into experiences. I&apos;m Ashfiqun Ahmed Miftah, blending
+                SQL, Python, and visualization tools with research-driven design
+                to boost engagement and guide smarter decisions. With a Computer
+                Science background, I pair analytical thinking with creative
+                problem-solving to make products clear and human.
               </p>
             </Reveal>
 
@@ -95,14 +97,14 @@ export function Hero() {
                   heroStep >= 1 ? "scale-[1.01] shadow-[0_10px_40px_rgba(56,189,248,0.35)]" : ""
                 )}
               >
-                Enter the Metagame
+                View Portfolio
               </Button>
               <Button
                 variant="ghost"
                 onClick={() => setOpen(true)}
                 className={cn(heroStep >= 1 ? "border-white/30 bg-white/10 shadow-[0_0_30px_rgba(255,255,255,0.15)]" : "")}
               >
-                Watch Trailer
+                Portfolio Preview
               </Button>
             </Reveal>
 
@@ -132,22 +134,25 @@ export function Hero() {
             )}
           >
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-400/10 via-fuchsia-500/12 to-blue-600/10 blur-[60px]" />
-            <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70">
+              <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70">
               <Card className="relative flex h-full flex-col overflow-hidden border border-white/10 bg-slate-900/80 p-0">
                 <Spotlight className="-top-32 left-8 md:left-16" fill="white" />
                 <div className="relative z-10 flex flex-col gap-3 p-6 text-sm text-slate-200">
                   <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-300">
-                    <span className="font-display text-base text-white">Spline Motion</span>
+                    <span className="font-display text-base text-white">Interactive Concept</span>
                     <span className="flex items-center gap-2 text-cyan-200">
-                      Live Scene
+                      Live Preview
                       <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
                     </span>
                   </div>
                   <p className="font-semibold text-white">
-                    Immersive 3D stitched into the portfolio—smooth, neon, and interactive.
+                    Data stories meet motion—an immersive slice of how I prototype
+                    dashboards and digital journeys.
                   </p>
                   <p className="text-sm text-slate-300">
-                    Coded with lazy loading, glass UI, and spotlight highlights. Feel the parallax glow as Spline breathes inside the card.
+                    Built with TypeScript, Tailwind, and Spline to test ideas fast.
+                    I iterate with research, microinteractions, and visual polish so
+                    insights land clearly.
                   </p>
                   <div className="grid grid-cols-2 gap-3 text-xs text-slate-200">
                     <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
@@ -155,8 +160,8 @@ export function Hero() {
                       <p className="font-semibold text-white">Spline · TS · Tailwind</p>
                     </div>
                     <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
-                      <p className="text-[11px] uppercase tracking-[0.18em] text-cyan-200">Style</p>
-                      <p className="font-semibold text-white">Glass + Glow</p>
+                      <p className="text-[11px] uppercase tracking-[0.18em] text-cyan-200">Focus</p>
+                      <p className="font-semibold text-white">Data clarity + UX feel</p>
                     </div>
                   </div>
                 </div>
@@ -179,7 +184,7 @@ export function Hero() {
             <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">
               Scroll
             </p>
-            <p className="text-sm text-slate-300">Discover the connected realms</p>
+            <p className="text-sm text-slate-300">See how data meets design</p>
           </div>
         </Reveal>
       </div>

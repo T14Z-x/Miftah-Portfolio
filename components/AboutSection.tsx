@@ -3,21 +3,21 @@ import { Reveal } from "./Reveal";
 
 const team = [
   {
-    name: "Lyra Chen",
-    role: "Founder & Architect",
-    focus: "Designs the meta-economy and interoperability layers across realms.",
+    name: "Data Analysis",
+    role: "SQL · Python · Tableau / Power BI",
+    focus: "Uncovers insights, optimizes strategies, and turns metrics into clear stories teams can act on.",
     gradient: "from-cyan-400 via-blue-500 to-fuchsia-500",
   },
   {
-    name: "Milo Reyes",
-    role: "AI Systems Lead",
-    focus: "Builds the adaptive companion stack and real-time inference routing.",
+    name: "UI/UX Design",
+    role: "User research · Wireframes · Prototypes",
+    focus: "Designs intuitive journeys with Figma and Adobe XD, validating ideas through research and iteration.",
     gradient: "from-fuchsia-400 via-rose-500 to-orange-400",
   },
   {
-    name: "Rin Okada",
-    role: "Experience Director",
-    focus: "Shapes the cinematic UX, motion language, and player-facing surfaces.",
+    name: "Collaboration",
+    role: "BRAC CS Graduate",
+    focus: "Blends analytical thinking with creative problem-solving; always eager to learn, collaborate, and solve complex problems.",
     gradient: "from-blue-400 via-cyan-400 to-emerald-400",
   },
 ];
@@ -37,8 +37,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="About"
-            title="NovaSphere is building a fair, player-driven metagame layer"
-            subtitle="We believe games should talk to each other, economies should be transparent, and AI should amplify player intent—not replace it."
+            title="Ashfiqun Ahmed Miftah bridges data and design"
+            subtitle="A BRAC CS graduate passionate about analyzing data and crafting intuitive digital experiences. I combine SQL, Python, Tableau, and Power BI with user research, Figma, and Adobe XD to enhance engagement and guide data-driven decisions."
           />
         </Reveal>
 

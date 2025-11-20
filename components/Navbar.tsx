@@ -6,9 +6,9 @@ import { Button } from "./ui/Button";
 
 const navItems = [
   { label: "Home", href: "#home" },
-  { label: "Products", href: "#products" },
-  { label: "Universe", href: "#universe" },
-  { label: "Token", href: "#token" },
+  { label: "Work", href: "#products" },
+  { label: "Process", href: "#universe" },
+  { label: "Toolkit", href: "#token" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
@@ -74,7 +74,7 @@ export function Navbar() {
           <span className="relative inline-flex items-center gap-2">
             <span className="h-9 w-9 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
             <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
-            <span className="relative text-xl font-display">NovaSphere</span>
+            <span className="relative text-xl font-display">Ashfiqun A. Miftah</span>
           </span>
         </a>
 
@@ -101,13 +101,13 @@ export function Navbar() {
             </a>
           ))}
           <Button href="#contact" className="ml-2">
-            Launch App
+            Let&apos;s Connect
           </Button>
         </nav>
 
         <div className="flex items-center gap-3 md:hidden">
           <Button href="#contact" className="hidden sm:inline-flex px-4 py-2 text-xs">
-            Launch App
+            Let&apos;s Connect
           </Button>
           <button
             type="button"
@@ -164,7 +164,7 @@ export function Navbar() {
             ))}
               <div className="pt-4">
                 <Button href="#contact" className="w-full text-center">
-                  Launch App
+                  Let&apos;s Connect
                 </Button>
               </div>
             </div>

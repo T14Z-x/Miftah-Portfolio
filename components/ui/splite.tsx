@@ -1,15 +1,29 @@
-'use client'
+"use client"
 
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useCallback, useRef } from "react"
+import type { Application } from "@splinetool/runtime"
 
-const Spline = lazy(() => import('@splinetool/react-spline'))
+const Spline = lazy(() => import("@splinetool/react-spline"))
 
 interface SplineSceneProps {
   scene: string
   className?: string
+  onLoad?: (app: Application) => void
 }
 
-export function SplineScene({ scene, className }: SplineSceneProps) {
+export function SplineScene({ scene, className, onLoad }: SplineSceneProps) {
+  const splineAppRef = useRef<Application | null>(null)
+
+  const handleLoad = useCallback(
+    (app: Application) => {
+      splineAppRef.current = app
+      // Use window-level events so the scene reacts even when the cursor is outside its container.
+      app.setGlobalEvents?.(true)
+      onLoad?.(app)
+    },
+    [onLoad]
+  )
+
   return (
     <Suspense
       fallback={
@@ -18,7 +32,7 @@ export function SplineScene({ scene, className }: SplineSceneProps) {
         </div>
       }
     >
-      <Spline scene={scene} className={className} />
+      <Spline scene={scene} className={className} onLoad={handleLoad} />
     </Suspense>
   )
 }

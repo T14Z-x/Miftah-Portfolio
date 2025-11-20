@@ -6,6 +6,9 @@ import { TrailerModal } from "./TrailerModal";
 import { Reveal } from "./Reveal";
 import { useSectionProgress } from "@/hooks/useScrollProgress";
 import { cn } from "@/lib/cn";
+import { SplineScene } from "./ui/splite";
+import { Card } from "./ui/card";
+import { Spotlight } from "./ui/spotlight";
 
 const featurePills = [
   "AI-directed squads",
@@ -130,55 +133,40 @@ export function Hero() {
           >
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cyan-400/10 via-fuchsia-500/12 to-blue-600/10 blur-[60px]" />
             <div className="relative h-full overflow-hidden rounded-2xl border border-white/10 bg-slate-900/70">
-              <div className="absolute inset-0">
-                <div className="absolute left-[10%] top-[20%] h-40 w-40 rounded-full bg-gradient-to-br from-cyan-400/25 to-blue-500/20 blur-3xl" />
-                <div className="absolute right-[10%] top-[15%] h-48 w-48 rounded-full bg-gradient-to-br from-fuchsia-500/25 to-rose-500/25 blur-3xl" />
-                <div className="absolute left-[40%] top-[45%] h-64 w-64 -translate-x-1/2 rounded-full border border-white/10" />
-                <div className="absolute left-[45%] top-[50%] h-80 w-80 -translate-x-1/2 -translate-y-1/2 rounded-full border border-cyan-400/20" />
-                <div className="absolute inset-6 rounded-[34px] border border-white/5 bg-gradient-to-br from-white/10 via-white/5 to-transparent" />
-                <div className="grid-overlay absolute inset-0 opacity-50" />
-              </div>
-              <div className="relative flex h-full items-center justify-center">
-                <div className="glass relative flex w-full max-w-[360px] flex-col gap-4 rounded-2xl border border-white/10 bg-slate-900/70 p-6 text-left shadow-xl">
+              <Card className="relative flex h-full flex-col overflow-hidden border border-white/10 bg-slate-900/80 p-0">
+                <Spotlight className="-top-32 left-8 md:left-16" fill="white" />
+                <div className="relative z-10 flex flex-col gap-3 p-6 text-sm text-slate-200">
                   <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-300">
-                    <span>Player Signal</span>
+                    <span className="font-display text-base text-white">Spline Motion</span>
                     <span className="flex items-center gap-2 text-cyan-200">
-                      Aligned
+                      Live Scene
                       <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
                     </span>
                   </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between rounded-xl border border-white/5 bg-white/5 px-4 py-3">
-                      <div>
-                        <p className="text-sm text-slate-400">Squad Mode</p>
-                        <p className="text-lg font-semibold text-white">
-                          Adaptive Rush
-                        </p>
-                      </div>
-                      <span className="rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 px-3 py-1 text-xs font-semibold text-slate-950">
-                        Live
-                      </span>
+                  <p className="font-semibold text-white">
+                    Immersive 3D stitched into the portfolio—smooth, neon, and interactive.
+                  </p>
+                  <p className="text-sm text-slate-300">
+                    Coded with lazy loading, glass UI, and spotlight highlights. Feel the parallax glow as Spline breathes inside the card.
+                  </p>
+                  <div className="grid grid-cols-2 gap-3 text-xs text-slate-200">
+                    <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+                      <p className="text-[11px] uppercase tracking-[0.18em] text-cyan-200">Stack</p>
+                      <p className="font-semibold text-white">Spline · TS · Tailwind</p>
                     </div>
-                    <div className="grid grid-cols-3 gap-3 text-sm">
-                      {["Trust Net", "Realm Sync", "Yield Flow"].map((label) => (
-                        <div
-                          key={label}
-                          className="rounded-xl border border-white/5 bg-white/5 px-3 py-4 text-center"
-                        >
-                          <p className="text-xs text-slate-400">{label}</p>
-                          <p className="mt-2 text-lg font-semibold text-white">
-                            {label === "Trust Net" ? "98%" : label === "Realm Sync" ? "1.2s" : "+42%"}
-                          </p>
-                        </div>
-                      ))}
+                    <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
+                      <p className="text-[11px] uppercase tracking-[0.18em] text-cyan-200">Style</p>
+                      <p className="font-semibold text-white">Glass + Glow</p>
                     </div>
-                  </div>
-                  <div className="flex items-center justify-between pt-2 text-sm text-slate-300">
-                    <span>NovaSphere AI link</span>
-                    <span className="text-cyan-200">Encrypted</span>
                   </div>
                 </div>
-              </div>
+                <div className="relative flex-1">
+                  <SplineScene
+                    scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+                    className="absolute inset-0 h-full w-full"
+                  />
+                </div>
+              </Card>
             </div>
           </Reveal>
         </div>

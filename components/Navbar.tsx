@@ -16,6 +16,7 @@ const navItems = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [activeId, setActiveId] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 12);
@@ -31,13 +32,38 @@ export function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.href.replace("#", ""));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+        if (visible.length > 0) {
+          setActiveId(visible[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+      }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur-xl transition-all duration-300",
         scrolled
-          ? "bg-slate-950/70 backdrop-blur-xl shadow-[0_20px_80px_rgba(0,0,0,0.55)] border-b border-white/10"
-          : "bg-gradient-to-b from-slate-950/80 via-slate-950/40 to-transparent"
+          ? "glass bg-slate-950/80 shadow-[0_20px_80px_rgba(0,0,0,0.55)]"
+          : "bg-white/5"
       )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
@@ -57,9 +83,20 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="group relative inline-flex items-center gap-2 uppercase tracking-[0.14em] transition-colors hover:text-white"
+              aria-current={activeId === item.href.slice(1) ? "true" : undefined}
+              className={cn(
+                "group relative inline-flex items-center gap-2 uppercase tracking-[0.14em] transition-colors hover:text-white",
+                activeId === item.href.slice(1)
+                  ? "text-white"
+                  : "text-slate-200"
+              )}
             >
-              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 transition-all duration-300 group-hover:w-full" />
+              <span
+                className={cn(
+                  "absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 transition-all duration-300",
+                  activeId === item.href.slice(1) ? "w-full" : "group-hover:w-full"
+                )}
+              />
               {item.label}
             </a>
           ))}
@@ -108,17 +145,23 @@ export function Navbar() {
         <div className="md:hidden">
           <div className="glass mx-4 mb-4 rounded-2xl border border-white/10 bg-slate-900/90 p-4 text-sm uppercase tracking-[0.14em] text-slate-200 shadow-2xl">
             <div className="flex flex-col divide-y divide-white/10">
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="flex items-center justify-between px-2 py-4 transition-colors hover:text-white"
-                >
-                  {item.label}
-                  <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 shadow-[0_0_12px_rgba(168,85,247,0.6)]" />
-                </a>
-              ))}
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                aria-current={activeId === item.href.slice(1) ? "true" : undefined}
+                className={cn(
+                  "flex items-center justify-between px-2 py-4 transition-colors hover:text-white",
+                  activeId === item.href.slice(1)
+                    ? "text-white"
+                    : "text-slate-200"
+                )}
+              >
+                {item.label}
+                <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 shadow-[0_0_12px_rgba(168,85,247,0.6)]" />
+              </a>
+            ))}
               <div className="pt-4">
                 <Button href="#contact" className="w-full text-center">
                   Launch App

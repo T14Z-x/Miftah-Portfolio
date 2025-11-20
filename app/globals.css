@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: dark;
+  --background: #050713;
+  --foreground: #e7ecf7;
+  --accent: #6ae5ff;
+  --accent-strong: #a855f7;
+  --panel: rgba(255, 255, 255, 0.03);
+  --panel-strong: rgba(255, 255, 255, 0.08);
+  --ring: rgba(106, 229, 255, 0.4);
 }
 
 @theme inline {
@@ -10,17 +16,64 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-padding-top: 96px;
+  background: #030511;
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(88, 65, 207, 0.35), transparent 32%),
+    radial-gradient(circle at 85% 15%, rgba(65, 209, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(232, 35, 131, 0.18), transparent 28%),
+    #050713;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+*::selection {
+  background: rgba(168, 85, 247, 0.25);
+  color: #f8fafc;
+}
+
+.glass {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.02),
+    0 24px 80px rgba(0, 0, 0, 0.55),
+    0 20px 40px rgba(88, 65, 207, 0.15);
+  backdrop-filter: blur(14px);
+}
+
+.glow {
+  box-shadow:
+    0 0 30px rgba(106, 229, 255, 0.18),
+    0 0 80px rgba(168, 85, 247, 0.12);
+}
+
+.grid-overlay {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+  opacity: 0.35;
+}
+
+.scroll-indicator {
+  animation: bounce 1.8s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
 }

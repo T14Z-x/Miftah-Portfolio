@@ -1,8 +1,17 @@
-'use client'
+"use client"
 
-import { SplineScene } from "@/components/ui/splite";
+import { Hero as AnimatedHero } from "@/components/ui/animated-hero";
 import { Card } from "@/components/ui/card";
+import { SplineScene } from "@/components/ui/splite";
 import { Spotlight } from "@/components/ui/spotlight";
+
+export function HeroDemo() {
+  return (
+    <div className="space-y-10">
+      <AnimatedHero />
+    </div>
+  );
+}
 
 export function SplineSceneBasic() {
   return (

@@ -100,14 +100,14 @@ export function Navbar() {
               {item.label}
             </a>
           ))}
-          <Button href="#contact" className="ml-2">
-            Let&apos;s Connect
+          <Button asChild className="ml-2">
+            <a href="#contact">Let&apos;s Connect</a>
           </Button>
         </nav>
 
         <div className="flex items-center gap-3 md:hidden">
-          <Button href="#contact" className="hidden sm:inline-flex px-4 py-2 text-xs">
-            Let&apos;s Connect
+          <Button asChild className="hidden sm:inline-flex px-4 py-2 text-xs">
+            <a href="#contact">Let&apos;s Connect</a>
           </Button>
           <button
             type="button"
@@ -163,8 +163,8 @@ export function Navbar() {
               </a>
             ))}
               <div className="pt-4">
-                <Button href="#contact" className="w-full text-center">
-                  Let&apos;s Connect
+                <Button asChild className="w-full text-center">
+                  <a href="#contact">Let&apos;s Connect</a>
                 </Button>
               </div>
             </div>

@@ -91,13 +91,13 @@ export function Hero() {
 
             <Reveal className="flex flex-wrap items-center gap-4" delay={140}>
               <Button
-                href="#products"
+                asChild
                 className={cn(
                   "transition-transform",
                   heroStep >= 1 ? "scale-[1.01] shadow-[0_10px_40px_rgba(56,189,248,0.35)]" : ""
                 )}
               >
-                View Portfolio
+                <a href="#products">View Portfolio</a>
               </Button>
               <Button
                 variant="ghost"

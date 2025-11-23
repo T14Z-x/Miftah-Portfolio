@@ -67,43 +67,45 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-        <a
-          href="#home"
-          className="group flex items-center gap-3 text-lg font-semibold tracking-wide text-white"
-        >
-          <span className="relative inline-flex items-center gap-2">
-            <span className="h-9 w-9 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
-            <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
-            <span className="relative text-xl font-display">Ashfiqun A. Miftah</span>
-          </span>
-        </a>
+        <div className="flex items-center gap-8 lg:gap-10">
+          <a
+            href="#home"
+            className="group flex items-center gap-3 text-lg font-semibold tracking-wide text-white"
+          >
+            <span className="relative inline-flex items-center gap-2">
+              <span className="h-9 w-9 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
+              <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
+              <span className="relative text-xl font-display">Ashfiqun A. Miftah</span>
+            </span>
+          </a>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
-          {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              aria-current={activeId === item.href.slice(1) ? "true" : undefined}
-              className={cn(
-                "group relative inline-flex items-center gap-2 uppercase tracking-[0.14em] transition-colors hover:text-white",
-                activeId === item.href.slice(1)
-                  ? "text-white"
-                  : "text-slate-200"
-              )}
-            >
-              <span
+          <nav className="hidden items-center gap-7 text-sm font-medium text-slate-200 md:flex">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                aria-current={activeId === item.href.slice(1) ? "true" : undefined}
                 className={cn(
-                  "absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 transition-all duration-300",
-                  activeId === item.href.slice(1) ? "w-full" : "group-hover:w-full"
+                  "group relative inline-flex items-center gap-2 uppercase tracking-[0.14em] transition-colors hover:text-white",
+                  activeId === item.href.slice(1)
+                    ? "text-white"
+                    : "text-slate-200"
                 )}
-              />
-              {item.label}
-            </a>
-          ))}
-          <Button asChild className="ml-2">
-            <a href="#contact">Let&apos;s Connect</a>
-          </Button>
-        </nav>
+              >
+                <span
+                  className={cn(
+                    "absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-cyan-400 via-fuchsia-500 to-blue-600 transition-all duration-300",
+                    activeId === item.href.slice(1) ? "w-full" : "group-hover:w-full"
+                  )}
+                />
+                {item.label}
+              </a>
+            ))}
+            <Button asChild className="ml-2">
+              <a href="#contact">Let&apos;s Connect</a>
+            </Button>
+          </nav>
+        </div>
 
         <div className="flex items-center gap-3 md:hidden">
           <Button asChild className="hidden sm:inline-flex px-4 py-2 text-xs">

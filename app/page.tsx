@@ -2,7 +2,6 @@ import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
-import { Hero as AnimatedHero } from "@/components/ui/animated-hero";
 import { Navbar } from "@/components/Navbar";
 import { PartnersSection } from "@/components/PartnersSection";
 import { ProductsSection } from "@/components/ProductsSection";
@@ -35,9 +34,6 @@ export default function HomePage() {
         <UniverseSection />
         <TokenSection />
         <PartnersSection />
-        <div className="px-6 pb-6 pt-4 lg:px-8">
-          <AnimatedHero />
-        </div>
         <AboutSection />
         <ContactSection />
       </main>

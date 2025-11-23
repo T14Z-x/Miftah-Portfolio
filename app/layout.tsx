@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import {
   JetBrains_Mono,
-  Plus_Jakarta_Sans,
-  Space_Grotesk,
+  DM_Sans,
+  Sora,
 } from "next/font/google";
 import "./globals.css";
 
-const base = Plus_Jakarta_Sans({
+const base = DM_Sans({
   variable: "--font-base",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -18,9 +18,10 @@ const mono = JetBrains_Mono({
   weight: ["400", "500", "600", "700"],
 });
 
-const display = Space_Grotesk({
+const display = Sora({
   variable: "--font-display",
   subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {

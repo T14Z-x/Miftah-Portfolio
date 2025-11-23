@@ -22,19 +22,27 @@ function Hero() {
   }, [titleIndex, titles.length])
 
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900/80 to-slate-900/60 px-6 py-16 shadow-[0_30px_70px_rgba(0,0,0,0.35)] sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden rounded-[32px] border border-white/10 bg-gradient-to-br from-slate-900 via-slate-900/85 to-slate-900/60 px-6 py-16 shadow-[0_30px_70px_rgba(0,0,0,0.35)] sm:py-20 lg:py-24">
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-cyan-500/15 blur-3xl" />
-        <div className="absolute bottom-[-10%] right-[-6%] h-80 w-80 rounded-full bg-fuchsia-500/15 blur-[120px]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.12),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(236,72,153,0.12),transparent_32%)]" />
+        <div className="absolute -left-28 top-0 h-72 w-72 rounded-full bg-cyan-500/18 blur-3xl" />
+        <div className="absolute bottom-[-12%] right-[-8%] h-80 w-80 rounded-full bg-fuchsia-500/18 blur-[120px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(56,189,248,0.12),transparent_32%),radial-gradient(circle_at_80%_24%,rgba(236,72,153,0.12),transparent_36%)]" />
       </div>
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.24em] text-cyan-100/80">
-          Data × Design Portfolio
+        <div className="flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.22em] text-cyan-100/80">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Data × Design Portfolio
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Available · Remote friendly
+          </span>
         </div>
 
         <div className="space-y-4">
+          <p className="text-xs uppercase tracking-[0.26em] text-slate-300">
+            Data-led product storytelling
+          </p>
           <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
             Building{" "}
             <span className="relative inline-flex w-[11ch] justify-center overflow-hidden align-baseline text-transparent">
@@ -66,15 +74,14 @@ function Hero() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-slate-200">
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            SQL · Python · Figma · Spline
-          </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Research-led UX
-          </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Motion + micro-interactions
-          </span>
+          {["SQL · Python · Tableau", "Figma · Adobe XD · Spline", "Research-led UX", "Motion + micro-interactions"].map((chip) => (
+            <span
+              key={chip}
+              className="rounded-full border border-white/10 bg-white/5 px-4 py-2"
+            >
+              {chip}
+            </span>
+          ))}
         </div>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -95,6 +102,24 @@ function Hero() {
               Book a call <PhoneCall className="h-4 w-4" />
             </a>
           </Button>
+        </div>
+
+        <div className="grid w-full gap-4 text-left sm:grid-cols-3">
+          {[
+            { label: "Analytics", value: "SQL · Python · Tableau / Power BI" },
+            { label: "Design", value: "Figma · Adobe XD · Prototypes" },
+            { label: "Approach", value: "Research, motion, clarity-first" },
+          ].map((item) => (
+            <div
+              key={item.label}
+              className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
+            >
+              <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/80">
+                {item.label}
+              </p>
+              <p className="mt-1 font-medium text-white">{item.value}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

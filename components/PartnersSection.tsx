@@ -22,7 +22,7 @@ function MarqueeRow({ offset }: { offset?: boolean }) {
 
 export function PartnersSection() {
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-14 lg:px-8">
+    <section className="relative mx-auto max-w-6xl px-6 pt-10 pb-14 lg:px-8">
       <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
         <Reveal className="flex flex-col gap-6">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">

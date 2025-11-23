@@ -48,35 +48,18 @@ export function ProductsSection() {
                   <span className="text-cyan-200/70">Module</span>
                 </div>
                 <div className="mt-6 space-y-3">
-                  <h3 className="font-display text-2xl font-semibold text-white">
-                    {product.name}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-slate-300">
-                    {product.description}
-                  </p>
-                </div>
-                <div className="mt-10 flex items-center gap-2 text-sm font-semibold text-cyan-200 transition-colors hover:text-white">
-                  <span>Learn more</span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                  >
-                    <path
-                      d="M6 12h12m0 0-5-5m5 5-5 5"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-cyan-400/20 to-fuchsia-500/20 blur-2xl" />
-              </article>
-            </Reveal>
-          ))}
-        </div>
+              <h3 className="font-display text-2xl font-semibold text-white">
+                {product.name}
+              </h3>
+              <p className="text-sm leading-relaxed text-slate-300">
+                {product.description}
+              </p>
+            </div>
+            <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gradient-to-br from-cyan-400/20 to-fuchsia-500/20 blur-2xl" />
+          </article>
+        </Reveal>
+      ))}
+    </div>
       </div>
     </section>
   );

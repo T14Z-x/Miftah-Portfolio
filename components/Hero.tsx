@@ -26,7 +26,7 @@ export function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="relative isolate overflow-hidden pt-28 pb-24 sm:pb-28 md:pt-32 lg:pt-36 lg:pb-32"
+      className="relative isolate overflow-hidden pt-28 pb-20 sm:pb-24 md:pt-32 lg:pt-36 lg:pb-24"
     >
       <div className="pointer-events-none absolute inset-0 opacity-70">
         <div className="absolute left-[5%] top-[8%] h-64 w-64 rounded-full bg-gradient-to-br from-cyan-500/40 via-fuchsia-500/30 to-blue-700/30 blur-3xl" />
@@ -81,7 +81,9 @@ export function Hero() {
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
                 Data Analyst | UI/UX Designer transforming data into insights and
-                designs into experiences. I&apos;m Ashfiqun Ahmed Miftah, blending
+                designs into experiences.
+                <br className="hidden md:block" />
+                I&apos;m Ashfiqun Ahmed Miftah, blending
                 SQL, Python, and visualization tools with research-driven design
                 to boost engagement and guide smarter decisions. With a Computer
                 Science background, I pair analytical thinking with creative
@@ -175,18 +177,6 @@ export function Hero() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal delay={260} className="flex items-center gap-3 text-sm text-slate-300">
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5">
-            <div className="scroll-indicator h-6 w-[2px] rounded-full bg-gradient-to-b from-cyan-300 to-fuchsia-400" />
-          </div>
-          <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-cyan-200/80">
-              Scroll
-            </p>
-            <p className="text-sm text-slate-300">See how data meets design</p>
-          </div>
-        </Reveal>
       </div>
 
       <TrailerModal open={open} onClose={() => setOpen(false)} />

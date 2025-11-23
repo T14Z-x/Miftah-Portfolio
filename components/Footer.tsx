@@ -17,14 +17,20 @@ export function Footer() {
           </a>
         </div>
         <div className="flex items-center gap-3">
-          {["X", "Discord", "GitHub"].map((network) => (
-            <span
-              key={network}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-100 transition hover:border-white/30 hover:bg-white/10"
-            >
-              {network}
-            </span>
-          ))}
+          <a
+            href="mailto:ashfiqun1727@gmail.com"
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-100 transition hover:border-white/30 hover:bg-white/10"
+          >
+            Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ashfiqun-ahmed-b4b405204/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-100 transition hover:border-white/30 hover:bg-white/10"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
     </footer>

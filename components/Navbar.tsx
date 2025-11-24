@@ -7,6 +7,7 @@ import { Button } from "./ui/Button";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Work", href: "#products" },
+  { label: "Experience", href: "#experience" },
   { label: "Process", href: "#universe" },
   { label: "Toolkit", href: "#token" },
   { label: "About", href: "#about" },
@@ -73,8 +74,13 @@ export function Navbar() {
             className="group flex items-center gap-3 text-lg font-semibold tracking-wide text-white"
           >
             <span className="relative inline-flex items-center gap-2">
-              <span className="h-9 w-9 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
-              <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
+              <span className="relative flex h-9 w-9 items-center justify-center">
+                <span className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
+                <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
+                <span className="relative text-sm font-bold text-white tracking-wide">
+                  AA
+                </span>
+              </span>
               <span className="relative text-xl font-display">Ashfiqun A. Miftah</span>
             </span>
           </a>

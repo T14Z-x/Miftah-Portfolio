@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
+import { ExperienceSection } from "@/components/ExperienceSection";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
@@ -31,6 +32,7 @@ export default function HomePage() {
       <main className="relative isolate">
         <Hero />
         <ProductsSection />
+        <ExperienceSection />
         <UniverseSection />
         <TokenSection />
         <PartnersSection />

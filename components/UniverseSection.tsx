@@ -5,17 +5,17 @@ const realms = [
   {
     title: "Discover & Define",
     description:
-      "Kick off with business goals, success metrics, and user signals. We focus the right questions before writing a query or drawing a wireframe.",
+      "Kick off with business goals, success metrics, and user signals—scoping both UX and front-end requirements before a query or a commit.",
   },
   {
     title: "Analyze & Map",
     description:
-      "Dig into SQL and Python, uncover patterns, and translate findings into journeys and opportunities for better product decisions.",
+      "Dig into SQL and Python, uncover patterns, and translate findings into journeys, component architecture, and performance requirements for React/Next.js.",
   },
   {
     title: "Prototype & Validate",
     description:
-      "Wireframe in Figma or Adobe XD, layer in motion, and test with users. Iterate quickly with dashboards that track the impact of each design change.",
+      "Wireframe in Figma or Adobe XD, layer in motion, and test with users. Iterate quickly, then ship validated flows as reusable components across web and React Native.",
   },
 ];
 
@@ -30,17 +30,22 @@ export function UniverseSection() {
         <Reveal className="space-y-6">
           <SectionHeading
             eyebrow="Process"
-            title="An approach that bridges data and design"
-            subtitle="From the first question to the final prototype, I translate insight into experiences that feel intentional and measurable."
+            title="An approach that bridges data, design, and front-end engineering"
+            subtitle="From the first question to the final prototype, I translate insight into React/Next.js experiences that feel intentional, performant, and measurable."
           />
           <p className="text-base leading-relaxed text-slate-300">
             I move between databases and design tools to align product teams,
             reduce ambiguity, and keep users at the center. Each loop pairs
-            analytical rigor with storytelling so stakeholders see what matters
-            and why it works.
+            analytical rigor with production-grade React/Next.js builds so stakeholders
+            see what matters, ship faster, and measure outcomes.
           </p>
           <div className="flex flex-wrap gap-3">
-            {["SQL + Python", "Tableau / Power BI", "Figma / Adobe XD"].map(
+            {[
+              "SQL + Python",
+              "React / Next.js / Tailwind CSS",
+              "Tableau / Power BI",
+              "Figma / Adobe XD",
+            ].map(
               (item) => (
                 <span
                   key={item}

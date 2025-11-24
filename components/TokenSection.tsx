@@ -6,17 +6,17 @@ const featureBlocks = [
   {
     title: "Analytics & Strategy",
     description:
-      "Turn business questions into SQL and Python analyses, dashboards, and recommendations teams can act on immediately.",
+      "Turn business questions into SQL and Python analyses, dashboards, and recommendations—then map them to React/Next.js backlogs teams can act on immediately.",
   },
   {
-    title: "Design Systems & Prototypes",
+    title: "Design Systems & Front-End Builds",
     description:
-      "Design user flows, wireframes, and interactive prototypes in Figma or Adobe XD with research at the center.",
+      "Design user flows, wireframes, and interactive prototypes in Figma or Adobe XD, then ship them as accessible components in React, Next.js, Tailwind CSS, and React Native.",
   },
   {
     title: "Research & Testing",
     description:
-      "Plan studies, synthesize findings, and pair qualitative insights with metrics to guide roadmaps and iterations.",
+      "Plan studies, synthesize findings, and pair qualitative insights with metrics to guide roadmaps and iterations across web and mobile experiences.",
   },
 ];
 
@@ -31,7 +31,7 @@ export function TokenSection() {
         <SectionHeading
           eyebrow="Toolkit"
           title="Tools and methods I use daily"
-          subtitle="Analytics, research, and design come together here—helping teams learn fast, decide confidently, and ship purposeful experiences."
+          subtitle="Analytics, research, and design come together with React, Next.js, Tailwind CSS, Node.js, and React Native—helping teams learn fast, decide confidently, and ship purposeful experiences."
           align="left"
         />
 

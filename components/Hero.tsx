@@ -11,9 +11,9 @@ import { Card } from "./ui/card";
 import { Spotlight } from "./ui/spotlight";
 
 const featurePills = [
-  "SQL & Python storytelling",
+  "Production-grade React/Next.js UI",
   "Human-centered UX flows",
-  "Dashboards that drive action",
+  "SQL & Python storytelling",
 ];
 
 export function Hero() {
@@ -45,7 +45,7 @@ export function Hero() {
               )}
             >
               <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 shadow-[0_0_12px_rgba(56,189,248,0.7)]" />
-              Data analyst · UI/UX designer
+              Front-end engineer · UI/UX designer · Data analyst
             </Reveal>
 
             <Reveal className="space-y-4" delay={80}>
@@ -80,14 +80,14 @@ export function Hero() {
                 </span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
-                Data Analyst | UI/UX Designer transforming data into insights and
-                designs into experiences.
+                Front-end developer | UI/UX designer | Data analyst delivering
+                production-ready React and Next.js experiences that perform.
                 <br className="hidden md:block" />
-                I&apos;m Ashfiqun Ahmed Miftah, blending
-                SQL, Python, and visualization tools with research-driven design
-                to boost engagement and guide smarter decisions. With a Computer
-                Science background, I pair analytical thinking with creative
-                problem-solving to make products clear and human.
+                I&apos;m Ashfiqun Ahmed Miftah, blending SQL, Python, and
+                visualization tools with TypeScript, Tailwind CSS, Node.js APIs,
+                and React Native for mobile to ship polished products. With a
+                Computer Science background, I pair analytical thinking with
+                creative problem-solving to make experiences clear, fast, and human.
               </p>
             </Reveal>
 
@@ -152,9 +152,9 @@ export function Hero() {
                     dashboards and digital journeys.
                   </p>
                   <p className="text-sm text-slate-300">
-                    Built with TypeScript, Tailwind, and Spline to test ideas fast.
-                    I iterate with research, microinteractions, and visual polish so
-                    insights land clearly.
+                    Built with React, Next.js, TypeScript, Tailwind, and Spline to
+                    test ideas fast. I iterate with research, microinteractions,
+                    and visual polish so insights land clearly across web and mobile.
                   </p>
                   <div className="grid grid-cols-2 gap-3 text-xs text-slate-200">
                     <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">

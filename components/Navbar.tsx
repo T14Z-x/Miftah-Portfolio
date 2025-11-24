@@ -78,7 +78,7 @@ export function Navbar() {
                 <span className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/60 via-fuchsia-500/70 to-blue-700/60 blur-[1px] group-hover:glow transition-all" />
                 <span className="absolute left-[2px] top-[2px] h-7 w-7 rounded-full bg-slate-900/80 backdrop-blur" />
                 <span className="relative text-sm font-bold text-white tracking-wide">
-                  AA
+                  
                 </span>
               </span>
               <span className="relative text-xl font-display">Ashfiqun A. Miftah</span>

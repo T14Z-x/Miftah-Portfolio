@@ -5,24 +5,24 @@ const pillars = [
   {
     label: "Data analysis",
     title: "SQL · Python · Tableau / Power BI",
-    copy: "Turn signals into stories—queries, dashboards, and recommendations that land with stakeholders.",
+    copy: "Turn signals into stories—queries, dashboards, and recommendations that land with stakeholders and feed the product backlog.",
   },
   {
-    label: "UX design",
-    title: "User research · Wireframes · Prototypes",
-    copy: "Map journeys, validate with users, and layer in motion so experiences feel intentional and clear.",
+    label: "Front-end & UX",
+    title: "React · Next.js · Tailwind CSS · React Native",
+    copy: "Map journeys, validate with users, and ship accessible components and screens that feel intentional across web and mobile.",
   },
   {
     label: "Collaboration",
-    title: "BRAC CS Graduate · Team facilitation",
-    copy: "Guide decisions, translate goals, and keep teams aligned on outcomes over opinions.",
+    title: "BRAC CS Graduate · Node.js APIs · Team facilitation",
+    copy: "Guide decisions, translate goals, and keep teams aligned on outcomes over opinions with a full-stack view.",
   },
 ];
 
 const stats = [
-  { label: "Focus", value: "Data-led UX for dashboards & product flows" },
-  { label: "Tooling", value: "SQL, Python, Tableau, Power BI, Figma, Adobe XD" },
-  { label: "Approach", value: "Research, micro-interactions, clarity-first storytelling" },
+  { label: "Focus", value: "Data-led UX and production-grade React/Next.js experiences" },
+  { label: "Tooling", value: "React, Next.js, Tailwind CSS, TypeScript, Node.js, React Native, SQL, Python, Tableau, Power BI, Figma, Adobe XD" },
+  { label: "Approach", value: "Research, performance-focused builds, microinteractions, clarity-first storytelling" },
 ];
 
 export function AboutSection() {
@@ -35,8 +35,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="About"
-            title="Data-first designer with a researcher's brain"
-            subtitle="I bridge analytics and UX so teams see what matters and ship with confidence. My work spans SQL and Python deep dives, dashboards, and interactive prototypes in Figma/Adobe XD—always grounded in research and motion that guides users."
+            title="Data-first designer & frontend engineer with a researcher's brain"
+            subtitle="I bridge analytics, UX, and production-grade React/Next.js and React Native builds so teams see what matters and ship with confidence. Work spans SQL and Python deep dives, dashboards, and interactive prototypes in Figma/Adobe XD—grounded in research, performance, and motion."
           />
         </Reveal>
 
@@ -53,20 +53,20 @@ export function AboutSection() {
                   I translate messy signals into experiences teams can trust.
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-300">
-                  Each engagement starts with the questions that matter, moves through SQL/Python analysis, and ends with prototypes that make decisions obvious. I keep stakeholders aligned with clear storytelling, motion, and measurable outcomes.
+                  Each engagement starts with the questions that matter, moves through SQL/Python analysis, and ends with React/Next.js builds that make decisions obvious. I keep stakeholders aligned with clear storytelling, motion, and measurable outcomes.
                 </p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/80">
                       How I work
                     </p>
-                    <p className="mt-1 text-slate-100">Research → Analyze → Prototype → Validate → Iterate</p>
+                    <p className="mt-1 text-slate-100">Research → Analyze → Prototype → Build → Validate → Iterate</p>
                   </div>
                   <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/80">
                       What teams get
                     </p>
-                    <p className="mt-1 text-slate-100">Dashboards, UX flows, motion systems, and a clear story to ship.</p>
+                    <p className="mt-1 text-slate-100">Dashboards, UX flows, motion systems, and production-grade React/Next.js and React Native experiences.</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export function AboutSection() {
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-2 text-xs text-slate-200">
-                  {["Cross-functional facilitation", "Storytelling with data", "Design systems", "Motion for clarity"].map((chip) => (
+                  {["Cross-functional facilitation", "Storytelling with data", "Design systems", "Performance-first React/Next.js", "Motion for clarity"].map((chip) => (
                     <span
                       key={chip}
                       className="rounded-full border border-white/10 bg-white/5 px-3 py-1"

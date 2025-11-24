@@ -5,22 +5,22 @@ const products = [
   {
     id: "01",
     name: "Insight-Driven Strategies",
-    description: "Translate business questions into SQL and Python analyses that uncover growth levers and product opportunities.",
+    description: "Translate business questions into SQL and Python analyses that feed a React/Next.js roadmap, uncover growth levers, and de-risk builds.",
   },
   {
     id: "02",
-    name: "Dashboards & Data Stories",
-    description: "Build Tableau and Power BI visuals that clarify performance, KPIs, and experimentation results for teams.",
+    name: "Front-end Dashboards & Data Stories",
+    description: "Build React/Next.js and Tailwind dashboards alongside Tableau and Power BI visuals to clarify performance, KPIs, and experiments.",
   },
   {
     id: "03",
     name: "UX Research & Prototyping",
-    description: "Plan user interviews, map journeys, and bring ideas to life in Figma and Adobe XD to validate early.",
+    description: "Plan user interviews, map journeys, and prototype in Figma/Adobe XD—then translate patterns into production-ready components.",
   },
   {
     id: "04",
     name: "Product Experiments",
-    description: "Design and measure UX experiments, pairing data with design iterations to improve engagement and retention.",
+    description: "Design and measure UX experiments, pairing data with React/React Native builds and Node.js APIs to improve engagement and retention.",
   },
 ];
 
@@ -33,8 +33,8 @@ export function ProductsSection() {
       <div className="relative space-y-12">
         <SectionHeading
           eyebrow="Expertise"
-          title="Data and design services that ship outcomes"
-          subtitle="From raw data to intuitive experiences, I connect analysis and UX so teams can make confident, user-centered decisions."
+          title="Data, design, and front-end services that ship outcomes"
+          subtitle="From raw data to intuitive experiences, I connect analysis, UX, and production-ready React/Next.js builds so teams can make confident, user-centered decisions."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">

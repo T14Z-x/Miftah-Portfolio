@@ -1,6 +1,19 @@
 import { Reveal } from "./Reveal";
 
-const partners = ["SQL", "Python", "Tableau", "Power BI", "Figma", "Adobe XD"];
+const partners = [
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "TypeScript",
+  "Node.js",
+  "React Native",
+  "SQL",
+  "Python",
+  "Tableau",
+  "Power BI",
+  "Figma",
+  "Adobe XD",
+];
 
 function MarqueeRow({ offset }: { offset?: boolean }) {
   return (

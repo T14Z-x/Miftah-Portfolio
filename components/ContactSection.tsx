@@ -93,7 +93,7 @@ export function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Work with Ashfiqun Ahmed Miftah"
-            subtitle="Need a dashboard stakeholders trust, or a product experience ready for launch? Share your goals—I'll pair data and design to ship something clear, measurable, and polished."
+            subtitle="Need a production-grade React/Next.js front end, a React Native prototype, or a dashboard stakeholders trust? Share your goals—I'll pair data, design, and engineering to ship something clear, measurable, and polished."
           />
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <InfoCard

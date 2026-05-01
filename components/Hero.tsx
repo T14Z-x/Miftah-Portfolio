@@ -11,9 +11,9 @@ import { Card } from "./ui/card";
 import { Spotlight } from "./ui/spotlight";
 
 const featurePills = [
-  "Production-grade React/Next.js UI",
-  "Human-centered UX flows",
-  "SQL & Python storytelling",
+  "Manual, exploratory, and regression testing",
+  "Test cases, bug reports, and release checks",
+  "Web, mobile, and API quality validation",
 ];
 
 export function Hero() {
@@ -45,7 +45,7 @@ export function Hero() {
               )}
             >
               <span className="h-2 w-2 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-500 shadow-[0_0_12px_rgba(56,189,248,0.7)]" />
-              Front-end engineer · UI/UX designer · Data analyst
+              QA engineer · SQA-focused tester · Front-end aware
             </Reveal>
 
             <Reveal className="space-y-4" delay={80}>
@@ -58,7 +58,7 @@ export function Hero() {
                       : "text-slate-400"
                   )}
                 >
-                  TRANSFORM
+                  SHIP
                 </span>
                 <span
                   className={cn(
@@ -66,7 +66,7 @@ export function Hero() {
                     heroStep >= 1 ? "drop-shadow-[0_6px_28px_rgba(168,85,247,0.35)]" : ""
                   )}
                 >
-                  DATA
+                  WITH
                 </span>
                 <span
                   className={cn(
@@ -76,18 +76,17 @@ export function Hero() {
                       : "text-slate-400"
                   )}
                 >
-                  EXPERIENCES
+                  CONFIDENCE
                 </span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-slate-300">
-                Front-end developer | UI/UX designer | Data analyst delivering
-                production-ready React and Next.js experiences that perform.
+                QA engineer | SQA-focused tester delivering reliable web and
+                mobile product validation.
                 <br className="hidden md:block" />
-                I&apos;m Ashfiqun Ahmed Miftah, blending SQL, Python, and
-                visualization tools with TypeScript, Tailwind CSS, Node.js APIs,
-                and React Native for mobile to ship polished products. With a
-                Computer Science background, I pair analytical thinking with
-                creative problem-solving to make experiences clear, fast, and human.
+                I&apos;m Ashfiqun Ahmed Miftah, focused on requirement analysis,
+                test case design, exploratory testing, regression coverage, and
+                clear defect reporting across React, Next.js, React Native,
+                Laravel, and API-backed products.
               </p>
             </Reveal>
 
@@ -148,13 +147,14 @@ export function Hero() {
                     </span>
                   </div>
                   <p className="font-semibold text-white">
-                    Data stories meet motion—an immersive slice of how I prototype
-                    dashboards and digital journeys.
+                    Quality assurance meets product polish: a snapshot of how I
+                    review flows, validate UI states, and pressure-test releases.
                   </p>
                   <p className="text-sm text-slate-300">
-                    Built with React, Next.js, TypeScript, Tailwind, and Spline to
-                    test ideas fast. I iterate with research, microinteractions,
-                    and visual polish so insights land clearly across web and mobile.
+                    Built with React, Next.js, TypeScript, Tailwind, and Spline
+                    to simulate production interfaces quickly. I work through
+                    edge cases, usability checks, and bug reproduction so
+                    releases land cleanly across web and mobile.
                   </p>
                   <div className="grid grid-cols-2 gap-3 text-xs text-slate-200">
                     <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
@@ -163,7 +163,7 @@ export function Hero() {
                     </div>
                     <div className="rounded-xl border border-white/10 bg-white/5 px-3 py-2">
                       <p className="text-[11px] uppercase tracking-[0.18em] text-cyan-200">Focus</p>
-                      <p className="font-semibold text-white">Data clarity + UX feel</p>
+                      <p className="font-semibold text-white">Release quality + UX trust</p>
                     </div>
                   </div>
                 </div>

@@ -7,12 +7,12 @@ const partners = [
   "TypeScript",
   "Node.js",
   "React Native",
-  "SQL",
-  "Python",
-  "Tableau",
-  "Power BI",
-  "Figma",
-  "Adobe XD",
+  "Laravel",
+  "PHP",
+  "MySQL",
+  "REST APIs",
+  "Responsive QA",
+  "Accessibility",
 ];
 
 function MarqueeRow({ offset }: { offset?: boolean }) {
@@ -43,7 +43,7 @@ export function PartnersSection() {
               Tools & Platforms
             </p>
             <p className="text-sm text-slate-300">
-              The stack I lean on to move from insight to experience.
+              The stack I validate to keep releases reliable.
             </p>
           </div>
           <div className="relative h-[68px] overflow-hidden">

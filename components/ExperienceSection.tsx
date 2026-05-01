@@ -15,7 +15,7 @@ const projects: Project[] = [
     context: "University Project",
     stack: ["Laravel", "PHP", "MySQL"],
     description:
-      "Built a full matchmaking experience with profile onboarding, search filters, secure auth, and admin moderation workflows.",
+      "Built and validated a full matchmaking experience with profile onboarding, search filters, secure auth, and admin moderation workflows.",
     image:
       "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1400&q=80&sat=-18",
   },
@@ -24,7 +24,7 @@ const projects: Project[] = [
     context: "University Project",
     stack: ["Laravel", "PHP", "MySQL", "Location services"],
     description:
-      "Designed a garage booking and tracking system with live location tagging, queue visibility, and service history.",
+      "Designed and tested a garage booking and tracking system with live location tagging, queue visibility, and service history.",
     image:
       "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80&sat=-12",
   },
@@ -39,8 +39,8 @@ export function ExperienceSection() {
       <div className="relative space-y-12">
         <SectionHeading
           eyebrow="Experience"
-          title="University builds with production rigor"
-          subtitle="Two flagship academic projects treated like client deliveries—owning research, architecture, secure auth, and polished handoff."
+          title="Academic projects delivered with a strong QA mindset"
+          subtitle="Two flagship academic builds treated like client deliveries, with attention to requirements, validation, secure flows, and polished handoff."
         />
 
         <div className="grid items-start gap-10 lg:grid-cols-[1.05fr,1.6fr]">
@@ -53,27 +53,30 @@ export function ExperienceSection() {
                   <span className="h-px w-8 bg-cyan-300/60" />
                 </p>
                 <p className="text-lg leading-relaxed text-slate-100">
-                  I approached both capstone projects like client work—scoping requirements, pairing research with
-                  delivery, and shipping reliable, well-documented builds.
+                  I approached both capstone projects like client work: scoping
+                  requirements, validating key flows, documenting issues, and
+                  shipping reliable, well-documented builds.
                 </p>
 
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-100">Approach</p>
                     <p className="mt-2 text-sm leading-relaxed text-slate-200">
-                      Discovery to MVP, with secure auth, clear data models, QA checklists, and stakeholder demos.
+                      Requirement review to MVP, with secure auth, test
+                      checklists, defect tracking, and stakeholder demos.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-100">Quality bar</p>
                     <p className="mt-2 text-sm leading-relaxed text-slate-200">
-                      Production-ready Laravel/PHP stacks, RESTful patterns, defensive error handling, and usable UI.
+                      Validation across critical journeys, defensive error
+                      handling, consistent UI behavior, and release-ready documentation.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  {["Laravel", "PHP", "MySQL", "User research", "Service design"].map((item) => (
+                  {["Laravel", "PHP", "MySQL", "Test scenarios", "Bug reporting"].map((item) => (
                     <span
                       key={item}
                       className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-100"

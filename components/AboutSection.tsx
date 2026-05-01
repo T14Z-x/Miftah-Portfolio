@@ -3,26 +3,26 @@ import { Reveal } from "./Reveal";
 
 const pillars = [
   {
-    label: "Data analysis",
-    title: "SQL · Python · Tableau / Power BI",
-    copy: "Turn signals into stories—queries, dashboards, and recommendations that land with stakeholders and feed the product backlog.",
+    label: "QA practice",
+    title: "Test planning · Regression · Defect reporting",
+    copy: "Create structured test scenarios, execute critical-path checks, and document issues clearly so teams can fix the right problems fast.",
   },
   {
-    label: "Front-end & UX",
-    title: "React · Next.js · Tailwind CSS · React Native",
-    copy: "Map journeys, validate with users, and ship accessible components and screens that feel intentional across web and mobile.",
+    label: "Product validation",
+    title: "Web · Mobile · API-backed workflows",
+    copy: "Validate user journeys, edge cases, responsive behavior, and release readiness across modern product stacks.",
   },
   {
     label: "Collaboration",
-    title: "BRAC CS Graduate · Node.js APIs · Team facilitation",
-    copy: "Guide decisions, translate goals, and keep teams aligned on outcomes over opinions with a full-stack view.",
+    title: "BRAC CS Graduate · Dev-aware communication",
+    copy: "Work closely with developers and stakeholders to clarify requirements, reproduce bugs, and keep releases aligned with expectations.",
   },
 ];
 
 const stats = [
-  { label: "Focus", value: "Data-led UX and production-grade React/Next.js experiences" },
-  { label: "Tooling", value: "React, Next.js, Tailwind CSS, TypeScript, Node.js, React Native, SQL, Python, Tableau, Power BI, Figma, Adobe XD" },
-  { label: "Approach", value: "Research, performance-focused builds, microinteractions, clarity-first storytelling" },
+  { label: "Focus", value: "QA-first product validation for reliable web and mobile releases" },
+  { label: "Tooling", value: "React, Next.js, Tailwind CSS, TypeScript, Node.js, React Native, Laravel, PHP, MySQL, REST APIs" },
+  { label: "Approach", value: "Requirement review, risk-based testing, regression coverage, and clear documentation" },
 ];
 
 export function AboutSection() {
@@ -35,8 +35,8 @@ export function AboutSection() {
         <Reveal>
           <SectionHeading
             eyebrow="About"
-            title="Data-first designer & frontend engineer with a researcher's brain"
-            subtitle="I bridge analytics, UX, and production-grade React/Next.js and React Native builds so teams see what matters and ship with confidence. Work spans SQL and Python deep dives, dashboards, and interactive prototypes in Figma/Adobe XD—grounded in research, performance, and motion."
+            title="QA-focused software graduate with a product mindset"
+            subtitle="I help teams ship stable products through requirement analysis, structured testing, and developer-aware validation across React/Next.js, React Native, Laravel, and API-backed workflows."
           />
         </Reveal>
 
@@ -47,26 +47,30 @@ export function AboutSection() {
               <div className="absolute -right-14 bottom-0 h-52 w-52 rounded-full bg-gradient-to-br from-fuchsia-500/10 via-rose-500/12 to-cyan-400/10 blur-[120px]" />
               <div className="relative space-y-4">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-cyan-200">
-                  Data → Design
+                  Quality → Confidence
                 </div>
                 <h3 className="font-display text-2xl font-semibold text-white">
-                  I translate messy signals into experiences teams can trust.
+                  I turn ambiguous requirements into release-ready checks.
                 </h3>
                 <p className="text-sm leading-relaxed text-slate-300">
-                  Each engagement starts with the questions that matter, moves through SQL/Python analysis, and ends with React/Next.js builds that make decisions obvious. I keep stakeholders aligned with clear storytelling, motion, and measurable outcomes.
+                  Each engagement starts with understanding the product,
+                  then moves through test case design, exploratory coverage,
+                  defect reporting, re-testing, and final validation. I focus
+                  on clarity, reproducibility, and smooth collaboration so
+                  releases stay stable and predictable.
                 </p>
                 <div className="grid gap-3 sm:grid-cols-2">
                   <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/80">
                       How I work
                     </p>
-                    <p className="mt-1 text-slate-100">Research → Analyze → Prototype → Build → Validate → Iterate</p>
+                    <p className="mt-1 text-slate-100">Review requirements → Design test cases → Execute → Report defects → Re-test → Sign off</p>
                   </div>
                   <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200">
                     <p className="text-xs uppercase tracking-[0.16em] text-cyan-200/80">
                       What teams get
                     </p>
-                    <p className="mt-1 text-slate-100">Dashboards, UX flows, motion systems, and production-grade React/Next.js and React Native experiences.</p>
+                    <p className="mt-1 text-slate-100">Test cases, bug reports, regression coverage, UAT support, and cleaner releases.</p>
                   </div>
                 </div>
               </div>
@@ -99,7 +103,7 @@ export function AboutSection() {
                   ))}
                 </div>
                 <div className="flex flex-wrap gap-2 text-xs text-slate-200">
-                  {["Cross-functional facilitation", "Storytelling with data", "Design systems", "Performance-first React/Next.js", "Motion for clarity"].map((chip) => (
+                  {["Cross-functional communication", "Bug reporting", "Regression testing", "Front-end-aware QA", "Usability validation"].map((chip) => (
                     <span
                       key={chip}
                       className="rounded-full border border-white/10 bg-white/5 px-3 py-1"

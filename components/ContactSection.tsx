@@ -74,7 +74,7 @@ export function ContactSection() {
         setSubmitted(true);
         setStatus("Thanks! Your message was sent.");
         setForm({ name: "", email: "", message: "" });
-      } catch (error) {
+      } catch {
         setStatus("We couldn't send your message. Please email ashfiqun1727@gmail.com directly.");
       } finally {
         setIsSending(false);
@@ -93,7 +93,7 @@ export function ContactSection() {
           <SectionHeading
             eyebrow="Contact"
             title="Work with Ashfiqun Ahmed Miftah"
-            subtitle="Need a production-grade React/Next.js front end, a React Native prototype, or a dashboard stakeholders trust? Share your goals—I'll pair data, design, and engineering to ship something clear, measurable, and polished."
+            subtitle="Need QA support for a web or mobile product? I can help with test planning, manual regression, usability checks, and release validation across modern front-end and API-backed workflows."
           />
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             <InfoCard
@@ -109,10 +109,10 @@ export function ContactSection() {
           </div>
           <div className="mt-4 flex flex-wrap gap-2 text-xs text-slate-200">
             {[
-              "Dashboards & storytelling",
-              "UX audits & prototypes",
-              "Research & usability",
-              "Motion for clarity",
+              "Manual QA & regression",
+              "Test cases & bug reporting",
+              "Usability & flow checks",
+              "Release readiness",
             ].map((item) => (
               <span
                 key={item}

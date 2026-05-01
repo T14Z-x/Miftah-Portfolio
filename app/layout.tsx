@@ -25,9 +25,9 @@ const display = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Ashfiqun Ahmed Miftah | Data Analyst & UI/UX Designer",
+  title: "Ashfiqun Ahmed Miftah | QA Engineer & SQA Portfolio",
   description:
-    "Portfolio of Ashfiqun Ahmed Miftah — blending SQL, Python, Tableau, Power BI, and human-centered design to turn data into decisions and experiences.",
+    "Portfolio of Ashfiqun Ahmed Miftah — focused on QA, SQA practices, structured testing, and reliable web and mobile product delivery.",
 };
 
 export default function RootLayout({

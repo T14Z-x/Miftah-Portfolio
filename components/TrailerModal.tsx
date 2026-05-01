@@ -51,8 +51,8 @@ export function TrailerModal({ open, onClose }: TrailerModalProps) {
             </div>
           </div>
           <p className="text-sm leading-relaxed text-slate-300">
-            Showreel coming soon. A quick look at how I translate data into
-            interactive prototypes, dashboards, and user journeys.
+            Showreel coming soon. A quick look at how I review user flows,
+            validate interfaces, and pressure-test releases before handoff.
           </p>
         </div>
       </div>

@@ -3,19 +3,19 @@ import { Reveal } from "./Reveal";
 
 const realms = [
   {
-    title: "Discover & Define",
+    title: "Review & Scope",
     description:
-      "Kick off with business goals, success metrics, and user signals—scoping both UX and front-end requirements before a query or a commit.",
+      "Start with requirements, user flows, and release goals so test coverage matches real product risk instead of guesswork.",
   },
   {
-    title: "Analyze & Map",
+    title: "Test & Document",
     description:
-      "Dig into SQL and Python, uncover patterns, and translate findings into journeys, component architecture, and performance requirements for React/Next.js.",
+      "Run manual, exploratory, and regression checks across core journeys, edge cases, and error states, then log issues clearly for fast turnaround.",
   },
   {
-    title: "Prototype & Validate",
+    title: "Re-test & Sign Off",
     description:
-      "Wireframe in Figma or Adobe XD, layer in motion, and test with users. Iterate quickly, then ship validated flows as reusable components across web and React Native.",
+      "Verify fixes, confirm acceptance criteria, and support release readiness with focused regression passes across web and mobile experiences.",
   },
 ];
 
@@ -30,21 +30,21 @@ export function UniverseSection() {
         <Reveal className="space-y-6">
           <SectionHeading
             eyebrow="Process"
-            title="An approach that bridges data, design, and front-end engineering"
-            subtitle="From the first question to the final prototype, I translate insight into React/Next.js experiences that feel intentional, performant, and measurable."
+            title="A QA workflow built for reliable releases"
+            subtitle="From first requirement review to final sign-off, I focus on coverage, clarity, and predictable product quality across modern web and mobile stacks."
           />
           <p className="text-base leading-relaxed text-slate-300">
-            I move between databases and design tools to align product teams,
-            reduce ambiguity, and keep users at the center. Each loop pairs
-            analytical rigor with production-grade React/Next.js builds so stakeholders
-            see what matters, ship faster, and measure outcomes.
+            I work between product expectations and implementation details to
+            reduce ambiguity, surface risks early, and keep releases stable.
+            Each loop is designed to make bugs reproducible, fixes verifiable,
+            and quality visible to the team.
           </p>
           <div className="flex flex-wrap gap-3">
             {[
-              "SQL + Python",
+              "Test cases + checklists",
               "React / Next.js / Tailwind CSS",
-              "Tableau / Power BI",
-              "Figma / Adobe XD",
+              "Laravel / PHP / MySQL",
+              "Web + mobile validation",
             ].map(
               (item) => (
                 <span

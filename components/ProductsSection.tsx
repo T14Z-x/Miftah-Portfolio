@@ -4,23 +4,23 @@ import { Reveal } from "./Reveal";
 const products = [
   {
     id: "01",
-    name: "Insight-Driven Strategies",
-    description: "Translate business questions into SQL and Python analyses that feed a React/Next.js roadmap, uncover growth levers, and de-risk builds.",
+    name: "Requirements Review & Test Planning",
+    description: "Break requirements into test scenarios, edge cases, acceptance checks, and execution checklists before development or release.",
   },
   {
     id: "02",
-    name: "Front-end Dashboards & Data Stories",
-    description: "Build React/Next.js and Tailwind dashboards alongside Tableau and Power BI visuals to clarify performance, KPIs, and experiments.",
+    name: "Manual QA & Regression Testing",
+    description: "Validate critical user journeys, responsive behavior, and core workflows across web and mobile builds before users see them.",
   },
   {
     id: "03",
-    name: "UX Research & Prototyping",
-    description: "Plan user interviews, map journeys, and prototype in Figma/Adobe XD—then translate patterns into production-ready components.",
+    name: "UI, UX & Usability Checks",
+    description: "Review interfaces for consistency, clarity, accessibility, and flow issues, then report defects with precise reproduction steps.",
   },
   {
     id: "04",
-    name: "Product Experiments",
-    description: "Design and measure UX experiments, pairing data with React/React Native builds and Node.js APIs to improve engagement and retention.",
+    name: "API & Release Readiness",
+    description: "Check integrated workflows, error states, and fix verifications so releases move forward with fewer surprises.",
   },
 ];
 
@@ -33,8 +33,8 @@ export function ProductsSection() {
       <div className="relative space-y-12">
         <SectionHeading
           eyebrow="Expertise"
-          title="Data, design, and front-end services that ship outcomes"
-          subtitle="From raw data to intuitive experiences, I connect analysis, UX, and production-ready React/Next.js builds so teams can make confident, user-centered decisions."
+          title="QA and SQA services focused on reliable delivery"
+          subtitle="I help teams reduce defects and ship with confidence through test planning, structured validation, and quality-focused collaboration."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">

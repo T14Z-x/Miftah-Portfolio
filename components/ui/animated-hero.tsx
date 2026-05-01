@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button"
 function Hero() {
   const [titleIndex, setTitleIndex] = useState(0)
   const titles = useMemo(
-    () => ["data-rich", "human", "immersive", "strategic", "polished"],
+    () => ["reliable", "tested", "stable", "usable", "release-ready"],
     []
   )
 
@@ -32,7 +32,7 @@ function Hero() {
       <div className="relative mx-auto flex max-w-5xl flex-col items-center gap-8 text-center">
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs uppercase tracking-[0.22em] text-cyan-100/80">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Data × Design Portfolio
+            QA × SQA Portfolio
           </span>
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2">
             Available · Remote friendly
@@ -41,7 +41,7 @@ function Hero() {
 
         <div className="space-y-4">
           <p className="text-xs uppercase tracking-[0.26em] text-slate-300">
-            Data-led product storytelling
+            Quality-focused product validation
           </p>
           <h1 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl md:text-6xl">
             Building{" "}
@@ -66,15 +66,14 @@ function Hero() {
           </h1>
 
           <p className="text-lg leading-relaxed text-slate-200 sm:text-xl">
-            I blend analytics, product strategy, and interface craft to turn
-            complex data into interfaces people actually understand. From
-            dashboards to interactive prototypes, I design with intention and
-            ship with polish.
+            I blend product understanding, structured testing, and front-end
+            awareness to help teams catch issues early and ship stable digital
+            experiences with confidence.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-slate-200">
-          {["SQL · Python · Tableau", "Figma · Adobe XD · Spline", "Research-led UX", "Motion + micro-interactions"].map((chip) => (
+          {["Test cases · Regression · Bug reports", "React · Next.js · Laravel", "Usability and responsive checks", "Release-focused QA"].map((chip) => (
             <span
               key={chip}
               className="rounded-full border border-white/10 bg-white/5 px-4 py-2"
@@ -106,9 +105,9 @@ function Hero() {
 
         <div className="grid w-full gap-4 text-left sm:grid-cols-3">
           {[
-            { label: "Analytics", value: "SQL · Python · Tableau / Power BI" },
-            { label: "Design", value: "Figma · Adobe XD · Prototypes" },
-            { label: "Approach", value: "Research, motion, clarity-first" },
+            { label: "Focus", value: "Manual QA · Regression · Release quality" },
+            { label: "Stack", value: "React · Next.js · Laravel · REST APIs" },
+            { label: "Approach", value: "Clarity, coverage, reproducibility" },
           ].map((item) => (
             <div
               key={item.label}
